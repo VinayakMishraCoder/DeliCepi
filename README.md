@@ -1,2 +1,2 @@
 # DeliCepi
-## A Ingredients/Recipe App
+## An Ingredients/Recipe App
