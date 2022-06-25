@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#C62B2B"
-                android:backgroundTint="#F2175383"
+                android:backgroundTint="#FFFFFF"
                 android:fadingEdge="horizontal"
                 android:foregroundTint="#FFFFFF"
                 android:scaleType="centerCrop"
@@ -40,13 +40,13 @@
 
             <TextView
                 android:id="@+id/recipe_item_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="190dp"
+                android:layout_height="30dp"
                 android:text="Your Food Item"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
-
+                android:ellipsize="end"
                 app:layout_constraintBottom_toBottomOf="@+id/recipe_item_bg"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.13"

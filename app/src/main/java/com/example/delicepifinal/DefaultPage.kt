@@ -35,9 +35,9 @@ class DefaultPage : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         navcontroller = Navigation.findNavController(view)
         getStarted = view.findViewById(R.id.get_started)
-        getStarted.setOnClickListener {
-            navcontroller.navigate(R.id.action_defaultPage_to_searchPage)
-        }
+//        getStarted.setOnClickListener {
+//            navcontroller.navigate(R.id.action_defaultPage_to_searchPage)
+//        }
     }
 
 

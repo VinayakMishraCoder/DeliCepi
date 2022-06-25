@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/DeliCepiFinal/app/src/main/res/drawable/anim_res.xml" value="0.1" />
+        <entry key="..\:/DeliCepiFinal/app/src/main/res/drawable/splash_background.xml" value="0.14" />
         <entry key="..\:/DeliCepiFinal/app/src/main/res/layout/activity_main.xml" value="0.17083333333333334" />
         <entry key="..\:/DeliCepiFinal/app/src/main/res/layout/fragment_about_page.xml" value="0.184375" />
         <entry key="..\:/DeliCepiFinal/app/src/main/res/layout/fragment_default_page.xml" value="0.22" />
@@ -10,6 +12,7 @@
         <entry key="..\:/DeliCepiFinal/app/src/main/res/layout/fragment_search_page.xml" value="0.22" />
         <entry key="..\:/DeliCepiFinal/app/src/main/res/layout/fragment_web_view.xml" value="0.16666666666666666" />
         <entry key="..\:/DeliCepiFinal/app/src/main/res/layout/recipe_item.xml" value="0.16666666666666666" />
+        <entry key="..\:/DeliCepiFinal/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
   </component>

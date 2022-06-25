@@ -1,10 +1,6 @@
 package com.example.delicepifinal
 
 import android.annotation.SuppressLint
-import android.app.Activity
-import android.content.pm.ActivityInfo
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -13,16 +9,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 
 class SearchPage : Fragment() ,RVListener{
@@ -75,7 +65,7 @@ class SearchPage : Fragment() ,RVListener{
         temp_text = view.findViewById(R.id.plates_text)
         recyclerView.layoutManager = LinearLayoutManager(requireActivity())
 
-        adapter = MyAdapter(this)
+        adapter = MyAdapter(this,this)
 
         recyclerView.adapter = adapter
 
@@ -98,9 +88,6 @@ class SearchPage : Fragment() ,RVListener{
                 temp_image.visibility = View.INVISIBLE
                 recyclerView.visibility = View.VISIBLE
             }else {
-//                temp_text.visibility = View.INVISIBLE
-//                temp_image.visibility = View.INVISIBLE
-//                recyclerView.visibility = View.VISIBLE
                 val show = Toast.makeText(context, "Invalid Search", Toast.LENGTH_SHORT)
                 show.show()
             }
@@ -145,7 +132,4 @@ class SearchPage : Fragment() ,RVListener{
             findNavController().navigate(R.id.action_searchPage_to_detailFragment,bundle)
         }
     }
-
-
-
 }
